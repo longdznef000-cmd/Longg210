@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "longg210",
+  "version": "${version}",
+  "name": "longg210",
+  "description": "Tu dong chuyen Totem of Undying ra tay chinh khi giet nguoi choi khac",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": { "main": ["com.example.autototem.AutoTotemMod"] },
+  "depends": { "fabricloader": ">=0.16.9", "minecraft": "~1.21.4", "java": ">=21", "fabric-api": "*" }
+}
