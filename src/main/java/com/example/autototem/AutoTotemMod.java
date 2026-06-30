@@ -43,7 +43,7 @@ public class AutoTotemMod implements ModInitializer {
             return;
         }
         var inventory = player.getInventory();
-        int selectedSlot = inventory.getSelectedSlot();
+        int selectedSlot = inventory.selectedSlot;
         for (int slot = 0; slot < 9; slot++) {
             if (slot == selectedSlot) {
                 continue;
@@ -56,11 +56,11 @@ public class AutoTotemMod implements ModInitializer {
                 return;
             }
         }
-        inventory.setSelectedSlot(0);
+        inventory.selectedSlot = 0;
         ItemStack slotOneStack = inventory.getStack(0);
         if (!slotOneStack.isEmpty()) {
             slotOneStack.set(net.minecraft.component.DataComponentTypes.CUSTOM_NAME, net.minecraft.text.Text.literal("longg210"));
             LOGGER.info("Khong co totem, da doi ten slot 1 thanh longg210 cho " + player.getName().getString());
         }
     }
-            }
+                             }
